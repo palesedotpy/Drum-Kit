@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+}
+
+@font-face {
+    font-family: mullish;
+    src: url(mullish.ttf);
+}
+
+body {
+    background: url("img/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    font-family: mullish;
+    font-weight: bold;
+}
+
+
+.container {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    display: grid;
+}
+
+.button {
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+    text-shadow: 0 0 .5rem black;
+
+    border: .3rem solid rgb(0, 0, 0);
+    border-radius: .5rem;
+
+    margin: 1rem;
+    padding: 1rem .5rem;
+    width: 8rem;
+
+    background: rgba(0, 0, 0, 0.6);
+    transition: all .07s ease;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.instrumentName {
+    color: gold;
+    font-size: 0.9rem;
+}
+
+::selection {
+    background-color: none;
+}
