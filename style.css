@@ -25,12 +25,16 @@ body {
 
 
 .container {
+    min-width: 90vw;
+
     top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
-    grid-template-columns: auto auto auto auto auto auto auto auto auto;
-    display: grid;
+    display: flex;
+
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .button {
